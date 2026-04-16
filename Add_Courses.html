@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Add courses.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/external.css">
+</head>
+
+<body>
+    <header>
+        <h1>Add Courses</h1>
+        <p>Welcome to the course addition page of the Personal Course Organizer. Please fill in the form below to add a
+            new course</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="My_Courses.html">My Courses</a></li>
+            <li><a href="Add_Courses.html">Add Courses</a></li>
+            <li><a href="Contact_Us.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="add-course">
+            <form method="post">
+                <label>Course Name</label><br>
+                <input type="text" name="CoursName" required placeholder="Enter Course Name" autofocus>
+                <hr>
+                <label>Instructor</label><br>
+                <input type="text" name="instructor" required placeholder="Please Enter The Instructor">
+                <hr>
+                <label>Credit Hours</label><br>
+                <input type="number" name="CreditHours" required min="0" max="3" step="1">
+                <hr>
+                <label>Notes</label><br>
+                <textarea name="notes" placeholder="  Please Write All Notes Here" rows="10" cols="100"></textarea>
+                <hr>
+                <input type="submit" id="submit">
+                <input type="reset" id="reset">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Personal Course Organizer &copy;</p>
+    </footer>
+</body>
+
+</html>

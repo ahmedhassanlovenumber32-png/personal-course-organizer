@@ -1,0 +1,259 @@
+/* ========== RESET ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ========== BODY ========== */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ========== HEADER ========== */
+header {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: #fff;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header p {
+    max-width: 700px;
+    margin: 10px auto;
+}
+
+/* ========== NAVBAR ========== */
+nav {
+    background: #222;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 5px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 12px 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: #4facfe;
+    border-radius: 6px;
+}
+
+/* ========== MAIN ========== */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 25px;
+}
+
+/* ========== HOME ========== */
+.first_sec,
+.third_sec,
+.final_sec {
+    text-align: center;
+}
+
+.second_sec ul {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    list-style: square inside;
+    max-width: 400px;
+    margin: auto;
+}
+
+.final_sec a {
+    display: inline-block;
+    background: #4facfe;
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.final_sec a:hover {
+    background: #0077ff;
+    transform: scale(1.05);
+}
+
+/* ========== TABLE ========== */
+.tabel {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+caption {
+    font-size: 20px;
+    margin: 10px;
+    font-weight: bold;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+}
+
+thead {
+    background: #4facfe;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+tbody tr:hover {
+    background: #dbeafe;
+    transition: 0.3s;
+}
+
+tfoot {
+    background: #ddd;
+    font-weight: bold;
+}
+
+/* ========== FORMS (Add + Contact) ========== */
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #4facfe;
+    outline: none;
+}
+
+/* buttons */
+#submit,
+#reset {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+
+#submit {
+    background: #4facfe;
+}
+
+#reset {
+    background: #ff4d4d;
+}
+
+#submit:hover {
+    background: #0077ff;
+}
+
+#reset:hover {
+    background: #cc0000;
+}
+
+form hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 10px 0;
+}
+
+/* ========== CONTACT ========== */
+.contact-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-items article {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+}
+
+.contact-items a {
+    color: #4facfe;
+    text-decoration: none;
+}
+
+.contact-items a:hover {
+    text-decoration: underline;
+}
+
+/* ========== FOOTER ========== */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    #submit,
+    #reset {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
